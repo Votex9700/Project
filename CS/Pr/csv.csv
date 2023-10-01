@@ -1,0 +1,12 @@
+import csv
+with open('txt.csv','r') as v:
+    x=csv.reader(v)
+    y=[]
+    for i in x:
+        if i[1] == 'cost':
+            continue
+        y.append(int(i[1]))
+    if i[1] == str(max(y)):
+        print(i[0])
+        
+        
